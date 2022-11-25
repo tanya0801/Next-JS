@@ -1,5 +1,5 @@
 import React from "react";
-import style from '../styles/About.module.css';
+import style from '../styles/About.module.scss';
 import Image from 'next/image';
 import Head from 'next/head';
 

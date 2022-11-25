@@ -6,13 +6,12 @@ const NotFound = () => {
     const router = useRouter();
     useEffect (()=>{
         setTimeout (() => {
-            router.push('/'); //routing to home page
+          //  router.push('/'); //routing to home page
         },3000)
     },[])
 
     return(
         <div>
-            <h2>Facilities</h2>
            <h2>Page not found</h2>
         </div>
     )

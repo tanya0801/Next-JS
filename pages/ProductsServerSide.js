@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image';
 import style from '../styles/Product.module.css';
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
     const response = await fetch ('https://fakestoreapi.com/products');
     const data = await response.json(); //To convert stringify json to parsed json
     return {
@@ -10,7 +10,7 @@ export const getStaticProps = async () => {
     }
 }   
 
-const Product = (props) => {
+const ProductsServerSide = (props) => {
     const {productData} = props;
     return(
         <div className = "row">
@@ -30,4 +30,4 @@ const Product = (props) => {
     )
 }
 
-export default Product;
+export default ProductsServerSide;
